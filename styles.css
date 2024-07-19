@@ -1,3 +1,21 @@
 h1 {
-  color: blue;
+  font-family: Comic Sans MS;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-clip: text;
+  color: transparent;
+}
+
+.hello-world-container {
+  background: black;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+body {
+  background-image: url('https://web.archive.org/web/20090829021138/http://www.geocities.com/nunchukas2003/1-awesome-dragon-back-ground.gif');
+  display: flex;
+  justify-content: center;
 }
