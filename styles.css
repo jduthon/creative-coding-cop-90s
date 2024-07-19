@@ -1,11 +1,17 @@
-h1 {
+* {
   font-family: Comic Sans MS;
 }
 
 .rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-image: linear-gradient(to left,  yellow, orange, red);
   background-clip: text;
   color: transparent;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .hello-world-container {
@@ -15,7 +21,32 @@ h1 {
 }
 
 body {
-  background-image: url('https://web.archive.org/web/20090829021138/http://www.geocities.com/nunchukas2003/1-awesome-dragon-back-ground.gif');
+  background-image: url('https://web.archive.org/web/20090830221555if_/http://geocities.com/kc6brz/stars.gif');
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.launch-button {
+  border-radius: 50%;
+  padding: 60px;
+  background-color: #f00;
+  border: #a00 solid 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  height: 300px;
+  width: 300px;
+  text-shadow: black 2px 2px;
+}
+
+.rocket {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-100%, 100%);
+  pointer-events: none;
+}
+
+.rocket.right {
+  transform: translate(-100%, 100%) scale(-1, 1);
 }
